@@ -20,8 +20,10 @@ def predict(text: str, model_name: str) -> List[str]:
 gradio_ui = gr.Interface(
     fn=predict,
     title="Lexicon-enhanced lemmatization for Estonian",
-    description="The purpose of this demo is to demonstrate the results of cite paper. The idea is to utilize the"
-                " input of an external resource (a `lexicon` — Vabamorf morphological analyzer in this particular case)"
+    description="The purpose of this demo is to demonstrate the results of"
+                " Lexicon-Enhanced Neural Lemmatization for Estonian (K. MILINTSEVICH, K. SIRTS)."
+                " The idea is to utilize the input of an external resource"
+                " (a `lexicon` — Vabamorf morphological analyzer in this particular case)"
                 " as an additional input to improve the results of a neural lemmatizer model. Said additional input"
                 " is a concatenation of one or more lemma candidates provided by Vabamorf. Morphological features and"
                 " the part of speech are provided by Stanza in this demo, although it's possible to use native Vabamorf"
