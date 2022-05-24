@@ -21,7 +21,7 @@ gradio_ui = gr.Interface(
     fn=predict,
     title="Lexicon-enhanced lemmatization for Estonian",
     description="The purpose of this demo is to demonstrate the results of"
-                " Lexicon-Enhanced Neural Lemmatization for Estonian (K. MILINTSEVICH, K. SIRTS)."
+                " Lexicon-Enhanced Neural Lemmatization for Estonian developed by TartuNLP research group."
                 " The idea is to utilize the input of an external resource"
                 " (a `lexicon` — Vabamorf morphological analyzer in this particular case)"
                 " as an additional input to improve the results of a neural lemmatizer model. Said additional input"
@@ -34,7 +34,7 @@ gradio_ui = gr.Interface(
                 " special symbols, which are `=` and `_`, denoting morphological derivation and separating parts of"
                 " compound words respectively. The latter was trained on the original data with Vabamorf set to output"
                 " these special symbols, while the latter was trained with `=` and `_` removed from the data and"
-                " vabamorf output .",
+                " vabamorf output.",
     inputs=[
         gr.inputs.Textbox(lines=7, label="Input text in the box below", placeholder="Text to lemmatize"),
         gr.inputs.Radio(list(models.keys()), label="Lemmatization type")
