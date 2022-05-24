@@ -44,18 +44,33 @@ gradio_ui = gr.Interface(
     ],
     examples=[
         [
-            "Andmebaasid võimaldavad endas hoida struktureeritud andmeid ja nendest on väga lihtne neid kätte saada "
-            "rakenduste jaoks.",
+            "Ekspositsioonid võiksid alata juba kunstihotellide fuajeedest.",
             "Lemmatize"
         ],
         [
-            "Aga äärmused sünnitavad äärmusi ja meesshovinistid tõstavad omakorda upsakalt päid ja muid kehaosi.",
+            "Ekspositsioonid võiksid alata juba kunstihotellide fuajeedest.",
             "Lemmatize with special symbols"
         ],
         [
-            "Juunioride MMilt pronksmedali teeninud tallinlane Eivinas Guzas seekord veel meeste koondisse ei mahtunud.",
+            "Kõik uuritavad võeti vastu TÜ üld- ja molekulaarpatoloogia instituudis inimesegeneetika uurimisrühmas.",
+            "Lemmatize with special symbols"
+        ],
+        [
+            "Peamiselt viimasele toetub ka järgnev artikkel.",
             "Lemmatize"
-        ]
+        ],
+        [
+            "Arutletakse selle üle, mida ülearuse rahaga peale hakata.",
+            "Lemmatize"
+        ],
+        [
+            "Väikesele poisile tuuakse apteegist söögiisu tõstmiseks kalamaksaõli.",
+            "Lemmatize"
+        ],
+        [
+            "Tulevased beebid olid justkui peegeldusena pilgu beebisinas ja veel mingi ähmane lubadus.",
+            "Lemmatize"
+        ],
     ],
     allow_screenshot=False,
     allow_flagging="never",
