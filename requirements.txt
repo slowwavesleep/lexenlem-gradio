@@ -1,2 +1,2 @@
 git+https://github.com/slowwavesleep/lexicon-enhanced-lemmatization.git
-gradio
+gradio==2.9.0
