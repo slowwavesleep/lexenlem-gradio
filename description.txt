@@ -1,0 +1,2 @@
+The purpose of this demo is to demonstrate the results of Lexicon-Enhanced Neural Lemmatization for Estonian developed
+by TartuNLP research group. For more details ses Description below.
