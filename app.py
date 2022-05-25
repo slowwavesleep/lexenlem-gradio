@@ -3,6 +3,8 @@ from typing import Dict, List, Union
 import gradio as gr
 from lexenlem.preprocessing.adhoc import AdHocLemmatizer
 
+title = "Lexicon-enhanced lemmatization for Estonian"
+
 with open("./article.md") as file:
     article: str = file.read()
 
@@ -35,7 +37,7 @@ def predict(text: str, output_special_symbols: bool) -> List[str]:
 
 demo = gr.Interface(
     fn=predict,
-    title="Lexicon-enhanced lemmatization for Estonian",
+    title=title,
     description=description,
     article=article,
     inputs=[
