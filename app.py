@@ -34,7 +34,9 @@ gradio_ui = gr.Interface(
                 " special symbols, which are `=` and `_`, denoting morphological derivation and separating parts of"
                 " compound words respectively. The latter was trained on the original data with Vabamorf set to output"
                 " these special symbols, while the latter was trained with `=` and `_` removed from the data and"
-                " vabamorf output.",
+                " vabamorf output."
+                "<img src='https://raw.githubusercontent.com/slowwavesleep/lexicon-enhanced-lemmatization/master/img"
+                "/StanfordNLP_Lemmatizer-Overall_Modified.jpg' width=340 height=361>",
     inputs=[
         gr.inputs.Textbox(lines=7, label="Input text in the box below", placeholder="Text to lemmatize"),
         gr.inputs.Radio(list(models.keys()), label="Lemmatization type")
