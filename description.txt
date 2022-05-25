@@ -1,3 +1,3 @@
 The purpose of this demo is to demonstrate the results of Lexicon-Enhanced Neural Lemmatization for Estonian language
-developed by TartuNLP research group. Options to lemmatize with or without special symbols are available.
-For more details ses Description below.
+developed by TartuNLP research group. Options to lemmatize with or without special symbols are available (do note that
+this functionality is implemented by means of using two separate models). For more details ses Description below.
