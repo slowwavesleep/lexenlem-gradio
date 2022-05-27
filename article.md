@@ -5,15 +5,15 @@ a rule-based analyzer (a `lexicon` — Vabamorf morphological analyzer in this p
 improve the results of a neural lemmatization model. Said additional input is a concatenation of one or more
 lemma candidates provided by Vabamorf. A second encoder is used to process this input. See the scheme below.
 
+The lexicon-enhanced lemmatizer itself is a modification on an older version of Stanza, which is a neural model that takes
+morphological features and parts of speech as input in addition to surface forms to predict a lemma. In this demo 
+morphological features and the part of speech are provided by a more recent version of Stanza, although it's possible
+to use native Vabamorf features as well (the results, however, are going to be slightly worse). Additional lexicon
+input is processed by a separate encoder.
+
 <p align="center">
     <img alt="Scheme" src="https://raw.githubusercontent.com/slowwavesleep/lexicon-enhanced-lemmatization/master/img/StanfordNLP_Lemmatizer-Overall_Modified.jpg" >
 </p>
-
-
-The lexicon-enhanced lemmatizer itself is based on an older version of Stanza, which is a neural model that takes
-morphological features and parts of speech as input in addition to surface forms. In this demo morphological features and the
-part of speech are provided by a more recent version of Stanza, although it's possible to use native Vabamorf
-features as well (the results, however, are going to be slightly worse).
 
 The models were trained on version 2.7 of the Estonian Dependency Treebank.
 
